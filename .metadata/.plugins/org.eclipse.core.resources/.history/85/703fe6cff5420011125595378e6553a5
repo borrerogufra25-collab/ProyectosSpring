@@ -1,0 +1,25 @@
+package com.salesianostriana.dam.proyectoej01holamundo;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MotorDiesel implements Motor {
+
+	@Override
+	public void arrancar() {
+		System.out.println("El coche diésel está arrancando");
+	}
+
+	@Override
+	public void acelerar() {
+	}
+
+	@Override
+	public void frenar() {
+	}
+
+	@Override
+	public void apagar() {
+	}
+
+}

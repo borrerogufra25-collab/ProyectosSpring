@@ -1,0 +1,17 @@
+package com.salesianostriana.dam.proyectoej01holamundo;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import ch.qos.logback.core.model.Model;
+
+@Controller
+public class ControladorSaludo {
+
+	@GetMapping("/saludo3")
+	public String welcome3(Model model) {
+		model.addAttribute("saludo", "Hola Mundo");
+
+		return "SaludoYEnlace";
+	}
+
+}
