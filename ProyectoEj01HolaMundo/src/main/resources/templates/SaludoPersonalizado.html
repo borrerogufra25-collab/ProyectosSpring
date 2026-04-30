@@ -14,6 +14,10 @@ fuera para poder pintar -->
 		Hola <span th:text="${persona.nombre + ' ' + persona.apellidos }"> amigo</span>
 	</h1>
 
+	<h2>Saludo tocho <span
+			th:text="${persona.nombre + '' + persona.apellidos + '' + #number.format(persona.notaMedia)+ ' ' + #calendar.format()}"></span>
+	</h2>
+
 </body>
 
 </html>
