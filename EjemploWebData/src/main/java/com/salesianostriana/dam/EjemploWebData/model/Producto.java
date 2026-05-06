@@ -30,27 +30,20 @@ public class Producto {
 	private Long id;
 
 	@Override
-	public final boolean equals(Object o) {
-		if (this == o)
+	public boolean equals(Object obj) {
+		if (this == obj)
 			return true;
-		if (o == null)
+		if (obj == null)
 			return false;
-		Class<?> oEffectiveClass = o instanceof HibernateProxy ? ((HibernateProxy) o).getHibernateLazyInitializer()
-				.getPersistentClass() : o.getClass();
-		Class<?> thisEffectiveClass = this instanceof HibernateProxy
-				? ((HibernateProxy) this).getHibernateLazyInitializer()
-						.getPersistentClass()
-				: this.getClass();
-		if (thisEffectiveClass != oEffectiveClass)
+		if (getClass() != obj.getClass())
 			return false;
-		Producto producto = (Producto) o;
-		return getId() != null && Objects.equals(getId(), producto.getId());
+		Producto other = (Producto) obj;
+		return Objects.equals(id, other.id);
 	}
 
 	@Override
-	public final int hashCode() {
-		return this instanceof HibernateProxy ? ((HibernateProxy) this).getHibernateLazyInitializer()
-				.getPersistentClass()
-				.hashCode() : getClass().hashCode();
+	public int hashCode() {
+		return Objects.hash(id);
 	}
+
 }
