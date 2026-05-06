@@ -16,7 +16,8 @@ public class Product {
 	private double price;	
 	private boolean inStock = false;
 	
-	//Importar la librería de Spring, de las dos que salen, la marrón 
+	//Importar la librería de Spring, 
+	//de las dos que salen, la marrón 
 	@DateTimeFormat(iso = ISO.DATE_TIME)
 	private LocalDateTime date; 
 
