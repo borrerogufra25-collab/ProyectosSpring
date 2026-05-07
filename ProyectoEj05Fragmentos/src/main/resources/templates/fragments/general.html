@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+	<!-- Aspectos clave de los fragments:
+ 
+	th:fragment: Se coloca en el archivo donde reside el código reutilizable.
+
+	th:replace: Reemplaza el elemento actual (el div contenedor) 
+	por el fragmento solicitado. Es lo más común para estructuras fijas.
+
+	th:insert: Inserta el fragmento dentro del elemento 
+	actual (el div se mantiene y el contenido va dentro).
+
+	Sintaxis ~{...}: Es la sintaxis recomendada en las versiones 
+	modernas de Thymeleaf para referenciar fragmentos, 
+	aunque a veces ~ sea opcional, es mejor practicar el hábito 
+	de escribirlo explícitamente.
+
+	Al ejecutar tu aplicación de Spring Boot, verás cómo el navegador 
+	renderiza la página uniendo el Header, 
+	el contenido dinámico del POJO y el Footer, en una sola vista coherente.
+	 -->
+
+	<header th:fragment="cabecera">
+		<nav style="background: #333; color: white; padding: 10px;">
+			<h1>Mi Tienda Online</h1>
+		</nav>
+	</header>
+
+	<footer th:fragment="pie">
+		<div style="text-align: center; margin-top: 20px;">
+			<p>&copy; 2026 1º DAM Grado Superior - Programación</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>
