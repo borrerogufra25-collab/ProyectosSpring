@@ -46,10 +46,6 @@ public class Producto {
 	private Set<Tag> tags = new HashSet<>(); 
 	
 	
-	
-	
-	
-	
 	// Métodos helper de la asociación bidireccional
 	// Producto - Categoria
 	public void addToCategoria(Categoria categoria) {

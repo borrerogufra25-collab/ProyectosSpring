@@ -1,0 +1,79 @@
+/* Limpieza de márgenes y tipografía base */
+
+/* Limpieza de márgenes y tipografía base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    
+    /* FIX: Cambiamos la dirección a columna para apilar elementos */
+    display: flex;
+    flex-direction: column; 
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor visual para las tablas */
+table {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-collapse: separate;
+    border-spacing: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo para los inputs */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Estilo del botón de envío */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para etiquetas */
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Títulos */
+h3, h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
