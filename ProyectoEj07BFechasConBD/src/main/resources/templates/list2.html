@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Alumnos</title>
+    <link rel="stylesheet" href="../static/css/main.css" th:href="@{/css/main.css}" />
+</head>
+<body>
+    <header>
+        <h1>Gestión de Alumnos - Salesianos Triana</h1>
+        <a href="#" th:href="@{/nuevo}" class="btn">Insertar nuevo alumno</a>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Email</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="alumno : ${alumnos}" 
+                    th:classappend="${cumpleaneros.contains(alumno)} ? 'cumpleanos-hoy' : ''">
+                    
+                    <td th:text="${alumno.nombre}">Nombre</td>
+                    <td th:text="${alumno.apellidos}">Apellidos</td>
+                    <td th:text="${alumno.email}">Email</td>
+                    
+                    <td th:text="${alumno.fechaNacimiento != null} 
+                                 ? ${#temporals.format(alumno.fechaNacimiento, 'dd/MM/yyyy')} 
+                                 : 'No registrada'">
+                    </td>
+
+                    <td>
+                        <span th:if="${cumpleaneros.contains(alumno)}" 
+                              th:text="'¡Cumpleaños! 🎂'"></span>
+                        <span th:unless="${cumpleaneros.contains(alumno)}" 
+                              th:text="'-'"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

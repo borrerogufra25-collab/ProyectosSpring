@@ -1,0 +1,112 @@
+/* --- Global: Reseteo y Estilos Base --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Estilos para Listado (Tabla) --- */
+table {
+    width: 90%;
+    max-width: 900px;
+    margin-top: 20px;
+    border-collapse: collapse; /* Evita espacios dobles entre bordes */
+    background: white;
+    border-radius: 8px;
+    overflow: hidden; /* Para que el borde redondeado se vea bien */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Efecto cebra para legibilidad */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e9ecef;
+    transition: background 0.2s;
+}
+
+/* --- Estilos para Formulario --- */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los campos */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Estilo especial para Cumpleaños --- */
+.cumpleanos-hoy {
+    color: #d9534f; /* Rojo suave/profesional */
+    font-weight: bold;
+    background-color: #fff5f5; /* Un fondo rojizo muy tenue para que destaque toda la fila */
+}
+
+.cumpleanos-hoy td {
+    border-bottom: 2px solid #d9534f;
+}
