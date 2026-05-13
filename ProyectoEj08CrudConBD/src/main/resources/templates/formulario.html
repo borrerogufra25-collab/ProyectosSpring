@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+		
+	<meta charset="UTF-8">
+	<title>Ejemplo CRUD completo en base de datos</title>
+	<link rel="stylesheet" href="../static/css/main.css" th:href="@{/css/main.css}" />
+</head>
+
+<body>
+	<div id="menu">
+		
+<!--
+	La ruta escrita en los href nos debe llevar al controller que se encargue 
+	de hacer lo que necesitemos, en este caso, a listar (/list) el enlace de inicio
+	y a mostrar el formulario para nuevo alumno (/nuevo)
+-->		
+		<a th:href="@{/list}">Inicio</a> | <a th:href="@{/nuevo}">Nuevo
+			alumno</a>
+	</div>
+	<div id="formulario">
+
+	<!-- 
+		Como siempre, el th:action espera el enlace del método del controlador 
+		anotado con postMapping que procesará el formulario, en este caso, 
+		estamos usando el operador ternario para usar el mismo formulario
+		tanto si agregamos un nuevo alumno (vacío) como si editamos (con datos)
+		
+		Si el id del alumno es distinto de cero, significa que hay alumno por lo que 
+		mandaremos al controller editar (ruta escrita en el postMapping): 
+		Si el id es cero, significa 
+		que no hay alumno por lo que mandamos al controlador de añadir un alumno nuevo.
+		En ambos casos, como no es buena práctica mostrar los id en la gestión de formularios 
+		están en un campo oculto (type: "hidden") pero se asigna/recoge el id
+		aunque no se vea el campo id en el formulario
+	 -->
+		<form th:action="${alumno.id != 0} ? @{/editar/submit} : @{/nuevo/submit}" th:object="${alumno}" method="post">
+			<input th:if="${alumno.id != 0}" type="hidden" name="id" th:field="*{id}" />
+			<input type="text" name="nombre" th:field="*{nombre}" placeholder="Nombre" />
+			<input type="text" name="apellidos" th:field="*{apellidos}" placeholder="Apellidos" />
+			<input type="email" name="email" th:field="*{email}" placeholder="Email" />
+			<input type="submit" name="enviar" value="Enviar" />
+		</form>
+	</div>
+</body>
+
+</html>
