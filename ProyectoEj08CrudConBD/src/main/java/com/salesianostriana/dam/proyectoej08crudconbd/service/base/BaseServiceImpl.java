@@ -32,13 +32,12 @@ public abstract class BaseServiceImpl<T, ID, R extends JpaRepository<T, ID>> imp
 
 	@Override
 	public void delete(T t) {
-		repository.delete(t);
 
 	}
 
 	@Override
 	public void deleteById(ID id) {
-		repository.deleteById(id);
+
 	}
 
 }
