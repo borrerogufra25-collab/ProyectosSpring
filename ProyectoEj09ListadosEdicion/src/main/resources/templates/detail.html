@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Detalle Producto</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link th:href="@{/css/style.css}" rel="stylesheet" />
+</head>
+
+<body class="pt-5">
+
+	<div class="container mt-5 pt-4">
+		<div class="row g-5">
+			<div class="col-md-5">
+				<div class="card shadow-sm">
+					<img th:src="${#strings.isEmpty(producto.imagen)} ? 'https://via.placeholder.com/400x400' : ${producto.imagen}"
+						class="img-fluid rounded" alt="producto" />
+				</div>
+			</div>
+
+			<div class="col-md-7">
+				<h1 class="display-5 fw-bold mb-3" th:text="${producto.nombre}">Nombre</h1>
+
+				
+				<!-- 
+					Para mostrar el precio miramos si el producto tiene descuento y usamos el operador (?)
+					Si el descuento es cero se muestra como se ha visto normalmente 
+					usando ${#numbers.formatCurrency(producto.pvp)}, es decir, la expresión de numbers
+					para mostrar número en formato de moneda y, si no es así, es decir, 
+					si el producto tiene descuento calculamos el nuevo precio,
+					(OJO, ESTO NO SE HACE AQUÍ, SE DEBE HACER EN UN SERVICIO, LO TENEMOS AQUÍ PARA QUE PODÁIS VER
+					QUE TAMBIÉN SE PUEDEN HACER CÁLCULOS EN TH) 
+					sacando factor común en la operación pvp-pvp*descuento, que queda como se puede ver 
+					después de los :${#numbers.formatCurrency(producto.pvp * (1 - producto.descuento)) 
+					también en formato moneda.
+				 -->				
+				
+				<div class="d-flex align-items-baseline mb-4">
+					<span class="display-6 fw-bold text-primary"
+						th:text="${producto.descuento == 0} ? ${#numbers.formatCurrency(producto.pvp)} : ${#numbers.formatCurrency(producto.pvp * (1 - producto.descuento))}">100€</span>
+
+					<th:block th:if="${producto.descuento > 0}">
+						<span class="text-muted text-decoration-line-through fs-4 ms-3"
+							th:text="${#numbers.formatCurrency(producto.pvp)}">120€</span>
+							
+<!-- 
+		Se muestra el descuento en forma de porcentaje usando la expresión de #numbers
+		#numbers.formatPercent(producto.descuento,1,0)
+		El primer número, el 1 significa cifras mínimas que se mostrarán y la segunda, el número de decimales
+-->
+							
+						<span class="badge bg-danger fs-6 ms-3"
+							th:text="${#numbers.formatPercent(producto.descuento,1,0)}">12%</span>
+					</th:block>
+				</div>
+
+<!--este cálculo no debe ir aquí ni está implementado realmente, se debería hacer en la clase PuntuacionService
+y traer a quí para pintar las estrellas de manera dinámica según las puntuaciones y los cálculos necesarios...
+-->				
+			
+<!-- Para "rellenar o pintar" las estrellas de puntuación: (repetimos que aquí no se gestionan las puntuaciones) 
+	
+	Para ello usamos un bucle que recorrerá las 5 estrellas que tendrá un producto
+	como máximo (para nosotros cada i del th:each es una estrella). Para cada i:
+	
+	Usamos th:classappend que es una forma que ofrece Th para usar condicionales "dinámicamente". 
+	
+	Supongamos que un producto tiene 3.5 de puntuación media:
+	
+	- Primer número i del bucle i=1 es menor que 3.5 por lo que pintamos 
+	la estrella rellena glyphicon-star, 
+	- Seguimos en el mismo producto, para el i=2 la puntación media vuelve a ser mayor, 
+	volvemos a pintar la estrella rellena e igual para 3. 
+	- Para 4 ya no se cumplirá la primera condición por lo que se pintará 
+	la estrella vacía al igual que la 5 (nuestro programa no pinta estrellas a la mitad) 
+	pero si pinta el número con decimales que da la puntuación media en el siguiente span.
+
+ -->
+	
+				<div class="mb-4">
+					<div class="fs-4 text-warning">
+						<span th:each="i:${#numbers.sequence(1,5)}"
+							th:class="${i <= producto.getPuntuacionMedia()} ? 'bi bi-star-fill' : 'bi bi-star'"></span>
+						<span class="text-muted fs-5 ms-2"
+							th:text="${#numbers.formatDecimal(producto.getPuntuacionMedia(),1,1)} + '/5'">4.5/5</span>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="mt-4">
+					<h3>Características</h3>
+					<p class="lead text-muted" th:text="${producto.descripcion}">Descripción completa del producto.</p>
+				</div>
+
+				<div class="mt-5 d-grid gap-2 d-md-block">
+					<button class="btn btn-success btn-lg px-5 me-md-2 shadow-sm">Añadir al carrito</button>
+					<a href="/" class="btn btn-outline-secondary btn-lg shadow-sm">Volver al catálogo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
