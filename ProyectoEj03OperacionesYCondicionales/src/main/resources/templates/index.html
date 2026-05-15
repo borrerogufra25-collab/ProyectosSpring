@@ -43,23 +43,21 @@
 				</ul>
 			</div>
 		</div>
-
-
+		
+		
 		<div class="row">
 			<div class="col-md-12">
 				<h2>Operadores textuales</h2>
 				<ul>
 					<li><strong>Concatenación (${'Hola ' + 'mundo'}):</strong>
-						<span th:text="${' Hola ' + 'mundo'}">texto</span>
-					</li>
-
+						<span th:text="${' Hola ' + 'mundo'}">texto</span></li>
+						
 					<li><strong>Sustitución de literales (|Mi nombre es ${nombre}|):</strong>
-						<span th:text="|Mi nombre es ${nombre}|">texto</span>
-					</li>
+						<span th:text="|Mi nombre es ${nombre}|">texto</span></li>
 				</ul>
 			</div>
 		</div>
-
+		 
 		<!--
 			Se pueden usar indistintamente los símbolos o las abreviaturas
 			le: less or equals
@@ -80,8 +78,8 @@
 							th:text="${'hola' ne 'Hola'}">resultado</span></li>
 				</ul>
 			</div>
-		</div>
-
+		</div>		
+		
 		<div class="row">
 			<div class="col-md-12">
 				<h2>Operadores booleanos</h2>
@@ -95,7 +93,7 @@
 				</ul>
 			</div>
 		</div>
-
+			
 		<div class="row">
 			<div class="col-md-12">
 				<h2>Comparaciones</h2>
@@ -103,7 +101,7 @@
 					uno, mostramos el nombre del primero. En otro caso, un mensaje
 					estándar.</p>
 
-				<!-- Condicional: La estructura es parecida Java, para la negación se usa not y en este caso, 
+		<!-- Condicional: La estructura es parecida Java, para la negación se usa not y en este caso, 
 			pasamos la lista (este nombre debe ser el que hemos dado a la lista en el addAttribute 
 			del controller) al método isEmpty, 
 			si no está vacía, entra dentro del if y hacemos todo lo que haya dentro del div en el 
@@ -128,14 +126,14 @@
 			<div class="col-md-12">
 				<h2>Operadores condicionales</h2>
 				<p>Realizamos la operación anterior, pero de forma mucho más resumida</p>
-
+				
 				<!-- Usando el operador Elvis "?" Apartado 4.12 tutorial 1 de th-->
 				<p
 					th:text="${not #lists.isEmpty(lista)} ? |Nombre del producto: ${lista[0].nombre}| : 'No hay productos disponibles en la lista'">
 					nombre</p>
 			</div>
 		</div>
-
+		
 		<!--
 			Dentro del contexto donde está "definido" el objeto, en nuestro caso el div donde hemos 
 			puesto th:object="${producto}" podremos usar los atributos del mismo
@@ -144,26 +142,26 @@
 			se pueden mezclar los dos tipos de sintaxis
 			Si no se ha seleccionado ningún objeto, la sintaxis de 
 			$ y de * son equivalentes (ver apartado 4.3 del tutorial usingthymeleaf)
-		-->
-
+		-->	
+		
 		<div class="row">
 			<div class="col-md-12">
 				<h2>Expresiones por defecto</h2>
-
+				
 				<div th:object="${producto}">
 					<p><strong th:text="*{nombre}">Nombre</strong> (<span th:text="*{precio}">precio</span> €)</p>
 					<p
 						th:text="*{descripcion}?: 'Si quiere más información sobre nuestro productos, no dude en contactar con nosotros'">
 						texto</p>
 				</div>
-
+				
 				<div th:object="${producto2}">
 					<p><strong th:text="*{nombre}">Nombre</strong> (<span th:text="*{precio}">precio</span> €)</p>
 					<p
 						th:text="*{descripcion}?: 'Si quiere más información sobre nuestro productos, no dude en contactar con nosotros'">
 						texto</p>
 				</div>
-
+				
 				<div th:object="${producto2}">
 					<p><strong th:text="*{nombre}">Nombre</strong> (<span th:text="*{precio}">precio</span> €)</p>
 					<p th:text="*{descripcion}?: _">Si quiere más información sobre nuestro productos, no dude en

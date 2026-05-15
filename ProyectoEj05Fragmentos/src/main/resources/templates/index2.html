@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head>
-	<meta charset="UTF-8">
-	<title>Detalle del Producto</title>
-
+    <meta charset="UTF-8">
+    <title>Detalle del Producto</title>
+	
 	<!-- Explicamos de nuevo las ruras en thymeleaf:
 		Rutas relativas: Spring Boot interpreta la carpeta static como la raíz. 
 		Por eso, aunque el archivo está en src/main/resources/static/css/estilos.css, 
@@ -23,21 +22,19 @@
 		la plantilla sin pasar por el servidor se apliquen los estilos también
 		
 	-->
-	<link rel="stylesheet" href="../static/css/estilos.css" th:href="@{/css/estilos.css}">
+    <link rel="stylesheet"  href="../static/css/estilos.css" th:href="@{/css/estilos.css}">
 </head>
-
 <body>
 
-	<div th:replace="~{fragments/general :: cabecera}"></div>
+    <div th:replace="~{fragments/general :: cabecera}"></div>
 
-	<main>
-		<h2>Detalle del Producto</h2>
-		<p>Nombre: <span th:text="${producto.nombre}">Nombre</span></p>
-		<p>Precio: <span th:text="${producto.precio} + ' €'">0.0</span></p>
-	</main>
+    <main>
+        <h2>Detalle del Producto</h2>
+        <p>Nombre: <span th:text="${producto.nombre}">Nombre</span></p>
+        <p>Precio: <span th:text="${producto.precio} + ' €'">0.0</span></p>
+    </main>
 
-	<div th:replace="~{fragments/general :: pie}"></div>
+    <div th:replace="~{fragments/general :: pie}"></div>
 
 </body>
-
 </html>

@@ -1,22 +1,20 @@
-<!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org"> <!-- Esto es para poner un espacio de nombre que no es de html y es de
-fuera para poder pintar -->
+<!doctype html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Saludo Personalizado</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Saludo personalizado</title>
 </head>
 
 <body>
 
-	<h1>
-		Hola <span th:text="${persona.nombre + ' ' + persona.apellidos }"> amigo</span>
-	</h1>
 
-	<h2>Saludo tocho <span
-			th:text="${persona.nombre + '' + persona.apellidos + '' + #number.format(persona.notaMedia)+ ' ' + #calendar.format()}"></span>
-	</h2>
+	<h1>
+		Hola <span th:text="${persona.nombre + ' ' + persona.apellidos}"> amigo!</span>
+	</h1>
 
 </body>
 
