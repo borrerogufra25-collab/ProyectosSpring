@@ -21,11 +21,12 @@ import lombok.ToString;
 @Builder
 @Entity
 public class Categoria {
-	
-	@Id @GeneratedValue
+
+	@Id
+	@GeneratedValue
 	private Long id;
 	private String nombre;
-	
+
 	@OneToMany(mappedBy = "categoria", fetch = FetchType.EAGER)
 	@ToString.Exclude
 	@Builder.Default
