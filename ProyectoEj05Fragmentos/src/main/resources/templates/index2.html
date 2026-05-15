@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle del Producto</title>
+	
+	<!-- Explicamos de nuevo las ruras en thymeleaf:
+		Rutas relativas: Spring Boot interpreta la carpeta static como la raíz. 
+		Por eso, aunque el archivo está en src/main/resources/static/css/estilos.css, 
+		en la etiqueta HTML usamos simplemente /css/estilos.css.
+		th:href="@{...}": Es fundamental usar la arroba (@) en Thymeleaf 
+		para definir rutas. Esto asegura que la URL sea correcta 
+		independientemente de dónde se despliegue la aplicación 
+		(útil si luego cambias el contexto de la aplicación en el servidor).
+
+		Limpieza: Al eliminar los estilos en línea (inline styles), 
+		tu HTML ahora solo se ocupa de la estructura y el contenido, 
+		mientras que el archivo CSS se ocupa de la presentación, 
+		cumpliendo con el paradigma MVC (Model-View-Controller) de forma más pura.
+		
+		Ponemos también el href sin th para que cuando queramos ver
+		la plantilla sin pasar por el servidor se apliquen los estilos también
+		
+	-->
+    <link rel="stylesheet"  href="../static/css/estilos.css" th:href="@{/css/estilos.css}">
+</head>
+<body>
+
+    <div th:replace="~{fragments/general :: cabecera}"></div>
+
+    <main>
+        <h2>Detalle del Producto</h2>
+        <p>Nombre: <span th:text="${producto.nombre}">Nombre</span></p>
+        <p>Precio: <span th:text="${producto.precio} + ' €'">0.0</span></p>
+    </main>
+
+    <div th:replace="~{fragments/general :: pie}"></div>
+
+</body>
+</html>

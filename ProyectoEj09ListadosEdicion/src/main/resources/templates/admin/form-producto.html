@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario Producto</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+</head>
+
+<body class="pt-5 bg-light">
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/">triana.salesianos.edu Shop</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+				<span class="navbar-toggler-icon"></span>
+			</button>			
+			
+			<!-- 
+				De nuevo una lista <ul> con dos elementos <li> de opciones que sale a la derecha de nuestra barra. 
+				Como siempre debemos incluir los href y los th:ref. 
+
+				Las rutas deben ser las de los controladores correspondientes a lo que se quiere hacer al pinchar en cada una de las opciones.
+				Por ejemplo,  <a href="/admin/producto/" th:href="@{/admin/producto/}"> que nos lleva 
+				a la clase ProductoController y, en concreto, al método index que es quien atiende a /admin/producto/ (con la barra al final)
+			-->
+			
+			<div class="collapse navbar-collapse" id="navbarMain">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Administración</a>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li><a class="dropdown-item" href="/admin/categoria/" th:href="@{/admin/categoria/}">Gestión de categorías</a></li>
+							<li><a class="dropdown-item" href="/admin/producto/" th:href="@{/admin/producto/}">Gestión de productos</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- 
+	Formulario de producto: Como se explica en categoría hace falta:
+
+	* method="post" 
+	* th:action="@{/admin/producto/nuevo/submit}" Ruta al método del controlador que esté anotado
+	con PostMapping de la clase ProductoController, en este caso, el método
+
+		@PostMapping("/nuevo/submit")
+		public String submitNuevoProducto(Producto producto, Model model)
+		
+	De nuevo debemos tener en cuenta que encima de este método solo aparace parte de la ruta porque hemos 
+	anotado la clase entera con @RequestMapping("/admin/producto") que es la que nos hace "ahorrar" tener que poner
+	toda la parte común de la ruta en cada método, si te fijas, la suma de la ruta del @RequestParam y la 
+	del @PostMapping es la que está escrita en el th=action
+
+	*th:object="${producto}" es el command object con el que trabajamo en el formulario, es decir, 
+	algo así como el objeto que se "formará" al recoger los campos del formulario. De nuevo, en este caso sencillo, 
+	coincide con una de nuestras entidades Producto.
+
+	El único campo nuevo en este caso es el select que se explica más abajo
+	-->
+	
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-md-8 offset-md-2 bg-white p-4 rounded shadow-sm">
+				
+				<form th:action="@{/admin/producto/nuevo/submit}" th:object="${producto}" method="post">
+					<h2 class="mb-4 text-primary">
+						<span th:text="${producto.id} ? 'Editar' : 'Nuevo'"></span> Producto
+					</h2>
+
+					<input type="hidden" th:field="*{id}" />
+
+					<div class="mb-3">
+						<label for="nombre" class="form-label font-weight-bold">Nombre</label>
+						<input type="text" class="form-control" id="nombre" th:field="*{nombre}" required>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6 mb-3">
+							<label for="pvp" class="form-label">PVP (€)</label>
+							<input type="number" step="0.01" class="form-control" id="pvp" th:field="*{pvp}" required>
+						</div>
+						<div class="col-md-6 mb-3">
+							<label for="descuento" class="form-label">Descuento (0.00 a 1.00)</label>
+							<input type="number" min="0" max="1" step="0.01" class="form-control" id="descuento"
+								th:field="*{descuento}">
+						</div>
+					</div>
+
+<!-- Campo select:
+
+		* Damos el campo que iremos mostrando, en este caso th:field="*{categoria}" tipo select
+		* Los distintos option (opciones del select) que se mostrarán mediante un bucle each que recorrerá la lista de categorías.
+		Esta lista se debe pasar en el controller al modelo
+		en nuestro caso en la clase ProductoController, en los métodos nuevoProducto o editarProducto
+		con la línea model.addAttribute("categorias", categoriaService.findAll());
+		
+		Se ha añadido también un option más, la primera, para que se muestren 3 guiones --- en caso de que no haya ninguna (value="-1").
+						
+		El bucle recorre la lista de categorías y de cada una que va sacando, tendremos el id para "cogerlo" mediante th:value="${cat.id}
+		si 
+		se selecciona esta opción (esto no se ve) y se muestra el nombre de la categoría
+						
+		En la documentación de Thymeleaf viene cómo se escribe cada uno de los tipos de campos de formularios, 
+		es imposible explicarlos todos. 
+-->
+					
+					<div class="mb-3">
+						<label for="categoria" class="form-label">Categoría</label>
+						<select th:field="*{categoria}" class="form-select" id="categoria">
+							<option value="-1">--- Seleccionar Categoría ---</option>
+							<option th:each="cat : ${categorias}" th:value="${cat.id}" th:text="${cat.nombre}"></option>
+						</select>
+					</div>
+
+					<div class="mb-3">
+						<label for="imagen" class="form-label">URL de la imagen</label>
+						<input type="url" class="form-control" id="imagen" th:field="*{imagen}"
+							placeholder="https://...">
+					</div>
+
+					<div class="mb-3">
+						<label for="descripcion" class="form-label">Descripción</label>
+						<textarea class="form-control" id="descripcion" rows="4" th:field="*{descripcion}"></textarea>
+					</div>
+
+					<div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+						<a th:href="@{/admin/producto/}" class="btn btn-outline-secondary me-md-2">Cancelar</a>
+						<button type="submit" class="btn btn-primary px-5">Guardar Producto</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

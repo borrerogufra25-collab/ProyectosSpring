@@ -1,0 +1,78 @@
+/* Variables de diseño */
+:root {
+    --primary-color: #4a90e2;
+    --text-color: #333;
+    --bg-color: #f4f7f6;
+    --table-header-bg: #4a90e2;
+    --table-header-text: #ffffff;
+    --row-hover: #eef6ff;
+    --border-color: #ddd;
+}
+
+/* Reseteo básico y tipografía */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+/* Estilos de tabla modernos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+thead {
+    background-color: var(--table-header-bg);
+    color: var(--table-header-text);
+}
+
+tr:hover {
+    background-color: var(--row-hover);
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para el género */
+.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.badge-unknown {
+    background-color: #e0e0e0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #666;
+}

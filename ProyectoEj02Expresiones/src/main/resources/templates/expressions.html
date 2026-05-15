@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Thymeleaf Expressions</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+	<h1 th:text="${welcomeMsg}">Mensaje por defecto (se sobreescribe)</h1>
+
+	<div th:object="${product}">
+		<h2>Detalles del Producto</h2>
+
+		<p>ID: <span th:text="*{id}">000</span></p>
+		<p>Nombre: <span th:text="*{name}">Nombre Producto</span></p>
+
+	</div>
+
+	<hr>
+
+	<h3>Otras utilidades comunes:</h3>
+	<ul>
+		<li>Descripción: <span th:utext="${product.description}">Descripción</span></li>
+
+		<!--Para formateos de números se puede usar expresiones de utilidad 
+		para objetos de TH como 
+		#numbers que tiene métodos como #numbers.formatDecimal (num, 3,2,'COMMA')-->
+		
+		<li>Precio formateado: <span th:text="'€' + ${product.price}">0.00</span></li>
+
+		<li>Estado:
+			<span th:text="${product.inStock} ? 'Disponible' : 'Agotado'">Estado</span>
+		</li>
+	</ul>
+
+</body>
+
+</html>

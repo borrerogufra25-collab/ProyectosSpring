@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!--Página sin nada de css, solo parte esencial de html y th-->
+<head>
+    <meta charset="utf-8">
+    <title>Primer Switch</title>
+</head>
+
+<body>
+
+    <h1>Ejemplo: Switch</h1>
+    <h2>Lista de clientes</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Primer Apellido</th>
+                <th>Segundo Apellido</th>
+                <th>Género</th>
+            </tr>
+        </thead>
+        
+        <tbody th:remove="all-but-first">
+            <tr th:each="customer : ${customerList}">
+                <td th:text="${customer.nombre}">Nombre</td>
+                <td th:text="${customer.apellido1}">Apellido 1</td>
+                <td th:text="${customer.apellido2}">Apellido 2</td>
+
+                <td th:switch="${customer.genero}">
+                    <img th:case="'male'" src="/img/male.png" alt="Male" />
+                    <img th:case="'female'" src="/img/female.png" alt="Female" />
+                    <span th:case="*">Unknown</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

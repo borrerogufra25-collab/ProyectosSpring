@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sobre Nosotros</title>
+	<link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+
+<!--
+	th:replace: Elimina el elemento "host" (el contenedor donde lo llamas) 
+	y lo sustituye completamente por el fragmento.
+	Si inspeccionas en el navegador, el div ha desaparecido
+		
+	th:insert: Mantiene el elemento "host" y mete el fragmento dentro de este.
+	Si examinas en el navegador, el div sigue existiendo, el footer está dentro
+	
+-->
+
+<body>
+
+	<div th:replace="~{fragments/general :: cabecera}"></div>
+
+	<main>
+		<h2>Sobre Nosotros</h2>
+		<p>Esta es nuestra página informativa.</p>
+	</main>
+
+	<div th:insert="~{fragments/general :: pie}"></div>
+
+</body>
+
+</html>
