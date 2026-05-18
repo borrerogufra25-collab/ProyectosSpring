@@ -11,47 +11,6 @@ import com.salesianostriana.dam.proyectoej09listadosedicion.modelo.Producto;
 import com.salesianostriana.dam.proyectoej09listadosedicion.repositorios.ProductoRepository;
 import com.salesianostriana.dam.proyectoej09listadosedicion.servicios.base.BaseServiceImpl;
 
-<<<<<<< HEAD
-=======
-/*
-@Service
-public class ProductoService {
-	
-	//Inyectamos el repo con atributo y constructor
-	private final ProductoRepository repositorio;
-	
-	public ProductoService (ProductoRepository repositorio) {
-		this.repositorio=repositorio;
-	}
-	
-	public List<Producto> findAll() {
-		return repositorio.findAll();
-	}
-	
-	public List<Producto> findAllByCategoria(Categoria categoria) {
-		return repositorio.findByCategoria(categoria);
-	}
-	
-	public List<Producto> findAllByCategoria(Long categoriaId) {
-		return repositorio.findByCategoriaId(categoriaId);
-	}
-	
-	public Producto findById(Long id) {
-		return repositorio.findById(id).orElse(null);
-	}
-	
-	public Producto save(Producto producto) {
-		return repositorio.save(producto);
-	}
-	
-	public Producto delete(Producto producto) {
-		Producto result = findById(producto.getId());
-		repositorio.delete(result);
-		return result;
-	}
-*/
-
->>>>>>> fe4ac9cc039ccf9b80cbcf7aab16705d12d8d50b
 @Service
 public class ProductoService extends BaseServiceImpl<Producto, Long, ProductoRepository> {
 
