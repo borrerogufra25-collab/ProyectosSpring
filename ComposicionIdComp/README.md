@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Ejemplo - Asociación de Composición con Identificador Compuesto
 
 ## Asociaciones de composición
@@ -8,17 +7,6 @@ Sea el siguiente diagrama de clases de UML.
 ![UML](./png/Model!Main_0.png)
 
 El código fuente que generamos inicialmente para solucionar este problema era el siguiente:
-=======
-# Ejemplo 10 - Asociación de Composición con Identificador Compuesto
-
-## Asociaciones de composición
-
-Partimos del mismo problema que ya planteamos en el [ejemplo 3](../Composicion/). Sea el siguiente diagrama de clases de UML.
-
-![UML](./png/Model!Main_0.png)
-
-El código fuente que generamos en dicha solución era el siguiente:
->>>>>>> fe4ac9cc039ccf9b80cbcf7aab16705d12d8d50b
 
 
 ```java

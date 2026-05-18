@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-		
+
 	<meta charset="UTF-8">
 	<title>Ejemplo CRUD completo en base de datos</title>
 	<link rel="stylesheet" href="../static/css/main.css" th:href="@{/css/main.css}" />
@@ -10,18 +10,18 @@
 
 <body>
 	<div id="menu">
-		
-<!--
+
+		<!--
 	La ruta escrita en los href nos debe llevar al controller que se encargue 
 	de hacer lo que necesitemos, en este caso, a listar (/list) el enlace de inicio
 	y a mostrar el formulario para nuevo alumno (/nuevo)
--->		
+-->
 		<a th:href="@{/list}">Inicio</a> | <a th:href="@{/nuevo}">Nuevo
 			alumno</a>
 	</div>
 	<div id="formulario">
 
-	<!-- 
+		<!-- 
 		Como siempre, el th:action espera el enlace del método del controlador 
 		anotado con postMapping que procesará el formulario, en este caso, 
 		estamos usando el operador ternario para usar el mismo formulario
@@ -35,7 +35,8 @@
 		están en un campo oculto (type: "hidden") pero se asigna/recoge el id
 		aunque no se vea el campo id en el formulario
 	 -->
-		<form th:action="${alumno.id != 0} ? @{/editar/submit} : @{/nuevo/submit}" th:object="${alumno}" method="post">
+		<form th:action="${alumno.id != 0} ? @{/inicioAdmin/clientes/editar/submit} : @{/nuevo/submit}"
+			th:object="${alumno}" method="post">
 			<input th:if="${alumno.id != 0}" type="hidden" name="id" th:field="*{id}" />
 			<input type="text" name="nombre" th:field="*{nombre}" placeholder="Nombre" />
 			<input type="text" name="apellidos" th:field="*{apellidos}" placeholder="Apellidos" />

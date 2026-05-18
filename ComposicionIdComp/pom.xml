@@ -5,11 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-<<<<<<< HEAD
 		<version>4.0.6</version>
-=======
-		<version>3.2.4</version>
->>>>>>> fe4ac9cc039ccf9b80cbcf7aab16705d12d8d50b
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.salesianostriana.dam</groupId>
@@ -18,11 +14,7 @@
 	<name>ComposicionIdComp</name>
 	<description>Ejemplo de ManyToOne y OneToMany con Composición con identificador compuesto</description>
 	<properties>
-<<<<<<< HEAD
 		<java.version>21</java.version>
-=======
-		<java.version>17</java.version>
->>>>>>> fe4ac9cc039ccf9b80cbcf7aab16705d12d8d50b
 	</properties>
 	<dependencies>
 		<dependency>
@@ -31,11 +23,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-<<<<<<< HEAD
 			<artifactId>spring-boot-starter-webmvc</artifactId>
-=======
-			<artifactId>spring-boot-starter-web</artifactId>
->>>>>>> fe4ac9cc039ccf9b80cbcf7aab16705d12d8d50b
 		</dependency>
 
 		<dependency>
@@ -69,7 +57,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-<<<<<<< HEAD
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -110,9 +97,4 @@
 	</build>
 
 
-=======
-		</plugins>
-	</build>
-
->>>>>>> fe4ac9cc039ccf9b80cbcf7aab16705d12d8d50b
 </project>
