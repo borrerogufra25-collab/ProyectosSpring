@@ -18,10 +18,9 @@ import com.salesianostriana.dam.proyectoej07bfechasconbd.model.Alumno;
  * que implementaremos en el servicio
  * y podemos usarla sin problema */
 
-public interface AlumnoRepository extends JpaRepository <Alumno, Long>{
-	
-	// Consulta para obtener alumnos que cumplen años hoy (mes y día coinciden)
-    @Query("SELECT a FROM Alumno a WHERE MONTH(a.fechaNacimiento) = :mes AND DAY(a.fechaNacimiento) = :dia")
-    List<Alumno> findByCumpleanios(@Param("mes") int mes, @Param("dia") int dia);
-}
+public interface AlumnoRepository extends JpaRepository<Alumno, Long> {
 
+	// Consulta para obtener alumnos que cumplen años hoy (mes y día coinciden)
+	@Query("SELECT a FROM Alumno a WHERE MONTH(a.fechaNacimiento) = :mes AND DAY(a.fechaNacimiento) = :dia")
+	List<Alumno> findByCumpleanios(@Param("mes") int mes, @Param("dia") int dia);
+}
