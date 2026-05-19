@@ -1,0 +1,65 @@
+body {
+    background-color: #f4f6f9;
+}
+
+.ticket-container {
+    max-width: 450px;
+    margin: 40px auto;
+}
+
+.ticket {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Efecto de corte de ticket de papel en la parte superior e inferior */
+.ticket::before, .ticket::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background-size: 12px 6px;
+}
+
+.ticket::before {
+    top: -6px;
+    background-image: linear-gradient(45deg, transparent 33.33%, #ffffff 33.33%, #ffffff 66.67%, transparent 66.67%),
+                      linear-gradient(-45deg, transparent 33.33%, #ffffff 33.33%, #ffffff 66.67%, transparent 66.67%);
+}
+
+.ticket::after {
+    bottom: -6px;
+    background-image: linear-gradient(45deg, transparent 33.33%, #ffffff 33.33%, #ffffff 66.67%, transparent 66.67%),
+                      linear-gradient(-45deg, transparent 33.33%, #ffffff 33.33%, #ffffff 66.67%, transparent 66.67%);
+}
+
+.ticket-header {
+    text-align: center;
+    border-bottom: 2px dashed #333;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.ticket-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ticket-line {
+    border-bottom: 1px dashed #777;
+    margin: 10px 0;
+}
+
+.ticket-footer {
+    text-align: center;
+    border-top: 2px dashed #333;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}

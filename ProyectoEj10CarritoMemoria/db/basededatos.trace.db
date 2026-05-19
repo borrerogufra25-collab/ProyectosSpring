@@ -1,0 +1,160 @@
+2026-05-19 08:08:18.361237+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.364025+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]1, 'Café Molido Premium', 'Café arábica 100% de tueste natural, ideal para empezar el día con energía.', 4.99, 0.0, 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]1, 'Café Molido Premium', 'Café arábica 100% de tueste natural, ideal para empezar el día con energía.', 4.99, 0.0, 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(1, 'Café Molido Premium', 'Café arábica 100% de tueste natural, ideal para empezar el día con energía.', 4.99, 0.0, 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400') [42001-240]
+2026-05-19 08:08:18.364542+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.364995+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]2, 'Camiseta Algodón Orgánico', 'Camiseta básica de cuello redondo, color blanco, 100% algodón sostenible.', 19.95, 0.15, 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]2, 'Camiseta Algodón Orgánico', 'Camiseta básica de cuello redondo, color blanco, 100% algodón sostenible.', 19.95, 0.15, 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(2, 'Camiseta Algodón Orgánico', 'Camiseta básica de cuello redondo, color blanco, 100% algodón sostenible.', 19.95, 0.15, 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=400') [42001-240]
+2026-05-19 08:08:18.365462+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.365858+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]3, 'Auriculares Inalámbricos', 'Auriculares con cancelación activa de ruido y batería de hasta 30 horas.', 89.99, 0.20, 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]3, 'Auriculares Inalámbricos', 'Auriculares con cancelación activa de ruido y batería de hasta 30 horas.', 89.99, 0.20, 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(3, 'Auriculares Inalámbricos', 'Auriculares con cancelación activa de ruido y batería de hasta 30 horas.', 89.99, 0.20, 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400') [42001-240]
+2026-05-19 08:08:18.366247+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.366629+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]4, 'Aceite de Oliva Extra Virgen', 'Aceite de oliva de categoría superior obtenido directamente de aceitunas, 1L.', 9.50, 0.0, 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]4, 'Aceite de Oliva Extra Virgen', 'Aceite de oliva de categoría superior obtenido directamente de aceitunas, 1L.', 9.50, 0.0, 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(4, 'Aceite de Oliva Extra Virgen', 'Aceite de oliva de categoría superior obtenido directamente de aceitunas, 1L.', 9.50, 0.0, 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400') [42001-240]
+2026-05-19 08:08:18.367028+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.367397+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]5, 'Zapatillas Deportivas Run', 'Zapatillas ligeras con amortiguación avanzada para running y entrenamiento.', 65.00, 0.10, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]5, 'Zapatillas Deportivas Run', 'Zapatillas ligeras con amortiguación avanzada para running y entrenamiento.', 65.00, 0.10, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(5, 'Zapatillas Deportivas Run', 'Zapatillas ligeras con amortiguación avanzada para running y entrenamiento.', 65.00, 0.10, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400') [42001-240]
+2026-05-19 08:08:18.367752+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.368127+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]6, 'Chocolate Negro 85%', 'Tableta de chocolate artesanal con un intenso 85% de cacao de cultivo biológico.', 2.75, 0.0, 'https://images.unsplash.com/photo-1548907040-4d42b3228b4a?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]6, 'Chocolate Negro 85%', 'Tableta de chocolate artesanal con un intenso 85% de cacao de cultivo biológico.', 2.75, 0.0, 'https://images.unsplash.com/photo-1548907040-4d42b3228b4a?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(6, 'Chocolate Negro 85%', 'Tableta de chocolate artesanal con un intenso 85% de cacao de cultivo biológico.', 2.75, 0.0, 'https://images.unsplash.com/photo-1548907040-4d42b3228b4a?w=400') [42001-240]
+2026-05-19 08:08:18.368486+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.368813+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]7, 'Mochila Urbana Impermeable', 'Mochila con compartimento acolchado para portátil de hasta 15.6 pulgadas.', 34.90, 0.0, 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]7, 'Mochila Urbana Impermeable', 'Mochila con compartimento acolchado para portátil de hasta 15.6 pulgadas.', 34.90, 0.0, 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(7, 'Mochila Urbana Impermeable', 'Mochila con compartimento acolchado para portátil de hasta 15.6 pulgadas.', 34.90, 0.0, 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400') [42001-240]
+2026-05-19 08:08:18.369152+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.369492+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]8, 'Ratón Óptico Ergonómico', 'Ratón inalámbrico con diseño ergonómico para reducir la fatiga de la muñeca.', 24.99, 0.05, 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]8, 'Ratón Óptico Ergonómico', 'Ratón inalámbrico con diseño ergonómico para reducir la fatiga de la muñeca.', 24.99, 0.05, 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(8, 'Ratón Óptico Ergonómico', 'Ratón inalámbrico con diseño ergonómico para reducir la fatiga de la muñeca.', 24.99, 0.05, 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=400') [42001-240]
+2026-05-19 08:08:18.369837+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.370171+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]9, 'Botella de Agua de Acero', 'Botella termo insulada de doble pared, mantiene el agua fría por 24 horas.', 15.99, 0.0, 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]9, 'Botella de Agua de Acero', 'Botella termo insulada de doble pared, mantiene el agua fría por 24 horas.', 15.99, 0.0, 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(9, 'Botella de Agua de Acero', 'Botella termo insulada de doble pared, mantiene el agua fría por 24 horas.', 15.99, 0.0, 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400') [42001-240]
+2026-05-19 08:08:18.370526+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.370840+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]10, 'Libreta de Notas A5', 'Libreta con cubiertas de cuero sintético y 160 páginas de papel pautado.', 8.50, 0.0, 'https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]10, 'Libreta de Notas A5', 'Libreta con cubiertas de cuero sintético y 160 páginas de papel pautado.', 8.50, 0.0, 'https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(10, 'Libreta de Notas A5', 'Libreta con cubiertas de cuero sintético y 160 páginas de papel pautado.', 8.50, 0.0, 'https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=400') [42001-240]
+2026-05-19 08:08:18.371162+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.371510+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]11, 'Teclado Mecánico RGB', 'Teclado con switches mecánicos silenciosos y retroiluminación personalizable.', 79.95, 0.25, 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]11, 'Teclado Mecánico RGB', 'Teclado con switches mecánicos silenciosos y retroiluminación personalizable.', 79.95, 0.25, 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(11, 'Teclado Mecánico RGB', 'Teclado con switches mecánicos silenciosos y retroiluminación personalizable.', 79.95, 0.25, 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=400') [42001-240]
+2026-05-19 08:08:18.371820+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.372131+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]12, 'Gafas de Sol Polarizadas', 'Protección UV400 total con montura de policarbonato ligera y resistente.', 22.00, 0.0, 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]12, 'Gafas de Sol Polarizadas', 'Protección UV400 total con montura de policarbonato ligera y resistente.', 22.00, 0.0, 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(12, 'Gafas de Sol Polarizadas', 'Protección UV400 total con montura de policarbonato ligera y resistente.', 22.00, 0.0, 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400') [42001-240]
+2026-05-19 08:08:18.372455+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.372756+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]13, 'Taza de Cerámica ""Code""', 'Taza apta para microondas y lavavajillas con diseño original para programadores.', 11.90, 0.0, 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]13, 'Taza de Cerámica ""Code""', 'Taza apta para microondas y lavavajillas con diseño original para programadores.', 11.90, 0.0, 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(13, 'Taza de Cerámica "Code"', 'Taza apta para microondas y lavavajillas con diseño original para programadores.', 11.90, 0.0, 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400') [42001-240]
+2026-05-19 08:08:18.373084+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.373416+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]14, 'Altavoz Bluetooth Portátil', 'Altavoz resistente al agua (IPX7) con sonido nítido y graves potentes.', 45.00, 0.12, 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]14, 'Altavoz Bluetooth Portátil', 'Altavoz resistente al agua (IPX7) con sonido nítido y graves potentes.', 45.00, 0.12, 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(14, 'Altavoz Bluetooth Portátil', 'Altavoz resistente al agua (IPX7) con sonido nítido y graves potentes.', 45.00, 0.12, 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400') [42001-240]
+2026-05-19 08:08:18.373778+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.374110+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]15, 'Té Verde Matcha Orgánico', 'Polvo de té matcha puro de grado ceremonial, origen Japón, 50g.', 18.50, 0.0, 'https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]15, 'Té Verde Matcha Orgánico', 'Polvo de té matcha puro de grado ceremonial, origen Japón, 50g.', 18.50, 0.0, 'https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(15, 'Té Verde Matcha Orgánico', 'Polvo de té matcha puro de grado ceremonial, origen Japón, 50g.', 18.50, 0.0, 'https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=400') [42001-240]
+2026-05-19 08:08:18.374437+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.374742+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]16, 'Sudadera con Capucha Classic', 'Sudadera unisex con bolsillo canguro, perfecta para el uso diario.', 29.99, 0.0, 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]16, 'Sudadera con Capucha Classic', 'Sudadera unisex con bolsillo canguro, perfecta para el uso diario.', 29.99, 0.0, 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(16, 'Sudadera con Capucha Classic', 'Sudadera unisex con bolsillo canguro, perfecta para el uso diario.', 29.99, 0.0, 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=400') [42001-240]
+2026-05-19 08:08:18.375091+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.375397+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]17, 'Cargador Rápido USB-C 65W', 'Cargador de pared compacto compatible con smartphones, tablets y portátiles.', 27.50, 0.08, 'https://images.unsplash.com/photo-1619134591149-41e9754f9d02?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]17, 'Cargador Rápido USB-C 65W', 'Cargador de pared compacto compatible con smartphones, tablets y portátiles.', 27.50, 0.08, 'https://images.unsplash.com/photo-1619134591149-41e9754f9d02?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(17, 'Cargador Rápido USB-C 65W', 'Cargador de pared compacto compatible con smartphones, tablets y portátiles.', 27.50, 0.08, 'https://images.unsplash.com/photo-1619134591149-41e9754f9d02?w=400') [42001-240]
+2026-05-19 08:08:18.375676+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.375970+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]18, 'Calcetines Deportivos (Pack de 3)', 'Calcetines transpirables con soporte en el arco del pie, ideales para deporte.', 12.00, 0.0, 'https://images.unsplash.com/photo-1582966772680-860e372bb558?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]18, 'Calcetines Deportivos (Pack de 3)', 'Calcetines transpirables con soporte en el arco del pie, ideales para deporte.', 12.00, 0.0, 'https://images.unsplash.com/photo-1582966772680-860e372bb558?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(18, 'Calcetines Deportivos (Pack de 3)', 'Calcetines transpirables con soporte en el arco del pie, ideales para deporte.', 12.00, 0.0, 'https://images.unsplash.com/photo-1582966772680-860e372bb558?w=400') [42001-240]
+2026-05-19 08:08:18.376290+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.376565+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]19, 'Power Bank 20000mAh', 'Batería externa de alta capacidad con dos puertos de carga rápida inteligente.', 39.90, 0.15, 'https://images.unsplash.com/photo-1609592424109-dd9892f1b17c?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]19, 'Power Bank 20000mAh', 'Batería externa de alta capacidad con dos puertos de carga rápida inteligente.', 39.90, 0.15, 'https://images.unsplash.com/photo-1609592424109-dd9892f1b17c?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(19, 'Power Bank 20000mAh', 'Batería externa de alta capacidad con dos puertos de carga rápida inteligente.', 39.90, 0.15, 'https://images.unsplash.com/photo-1609592424109-dd9892f1b17c?w=400') [42001-240]
+2026-05-19 08:08:18.376871+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; se esperaba "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PRODUCTO (ID, NOMBRE, DESCRIPCION, PVP, DESCUENTO, IMAGEN) VALUES [42001-240]
+2026-05-19 08:08:18.377131+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]20, 'Vela Aromática de Lavanda', 'Vela artesanal hecha con cera de soja natural y aceites esenciales relajantes.', 14.50, 0.0, 'https://images.unsplash.com/photo-1603006905003-be475563bc59?w=400')"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]20, 'Vela Aromática de Lavanda', 'Vela artesanal hecha con cera de soja natural y aceites esenciales relajantes.', 14.50, 0.0, 'https://images.unsplash.com/photo-1603006905003-be475563bc59?w=400')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(20, 'Vela Aromática de Lavanda', 'Vela artesanal hecha con cera de soja natural y aceites esenciales relajantes.', 14.50, 0.0, 'https://images.unsplash.com/photo-1603006905003-be475563bc59?w=400') [42001-240]
