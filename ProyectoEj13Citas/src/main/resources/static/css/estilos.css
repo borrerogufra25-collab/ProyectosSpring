@@ -1,0 +1,28 @@
+/* Estilos globales para la clínica estética/cyberpunk */
+body {
+    background-color: #12141c;
+    color: #e2e8f0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.navbar-custom {
+    background-color: #1a1f2c;
+    border-bottom: 2px solid #0dcaf0;
+}
+
+.card-dashboard {
+    background-color: #1a1f2c;
+    border: 1px solid #2d3748;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-dashboard:hover {
+    transform: translateY(-5px);
+    border-color: #0dcaf0;
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, #0dcaf0, #0d6efd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
